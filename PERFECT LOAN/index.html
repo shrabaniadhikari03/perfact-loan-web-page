@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LOAN WEBSITE</title>
+    <title>Loan webpage</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -51,8 +51,8 @@
                 <li><a href="#">FAQ'S</a></li>
               </ul>
 
-              <div class="btn_contact">
-                <a href="#">CONTACT</a>
+              <div class="contact">
+                <a href="#" class="button btn_blue">CONTACT</a>
               </div>
             </div>
           </nav>
@@ -66,20 +66,26 @@
         <div class="container">
           <div class="banner_content">
             <div class="banner_text">
-              <h1>Find Your Perfact <span>Loan</span></h1>
+              <h1>Find Your Perfect <span>Loan</span></h1>
               <p>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque
                 reiciendis aperiam placeat dicta dolor fugiat velit possimus.
               </p>
-              <a href="#" class="btn_apply">Apply Now</a>
+              <a href="#" class="button btn_red">Apply Now</a>
             </div>
 
             <div class="banner_form">
               <h3>Sign Up for My Weekly Mind Set & Markets Newsletter</h3>
-              <form>
+              <form class="form_data">
                 <div class="form_flex">
-                  <input type="text" id="text" placeholder="Name" />
-                  <input type="number" id="number" placeholder="Phone" />
+                  <input type="text" id="text" placeholder="Name" required />
+
+                  <input
+                    type="number"
+                    id="number"
+                    placeholder="Phone"
+                    required
+                  />
                 </div>
                 <input type="email" id="mail" placeholder="Email" />
                 <textarea placeholder="Massage"></textarea>
@@ -95,7 +101,9 @@
       <section class="about section_padding">
         <div class="container">
           <div class="about_content">
-            <img src="./images/about.png" loading="lazy" alt="make group" />
+            <figure>
+              <img src="./images/about.png" loading="lazy" alt="make group" />
+            </figure>
 
             <div class="about_text">
               <h2>About Our <span>Team</span></h2>
@@ -106,7 +114,7 @@
                 broadcast journalism for several years as a backpack reporter,
                 and all in one...
               </p>
-              <a href="#" class="about_link">Read More</a>
+              <a href="#" class="button btn_blue">Read More</a>
             </div>
           </div>
         </div>
@@ -117,12 +125,14 @@
       <section class="loan_product section_padding">
         <div class="container">
           <div class="loan_product_content">
-            <h2>The Loan <span>Products</span></h2>
-            <p>
-              elementum dolor vehicula, tincidunt lectus. Nullam sed mi
-              molestie, elementum neque eget, accumsan ante. Duis sagittis neque
-              id urna malesuada mattis
-            </p>
+            <div class="loan_text">
+              <h2>The Loan <span>Products</span></h2>
+              <p>
+                elementum dolor vehicula, tincidunt lectus. Nullam sed mi
+                molestie, elementum neque eget, accumsan ante. Duis sagittis
+                neque id urna malesuada mattis
+              </p>
+            </div>
             <div class="loan_items">
               <div class="item">
                 <figure>
@@ -144,7 +154,7 @@
               </div>
             </div>
             <div class="loan_link">
-              <a href="#">Read More</a>
+              <a href="#" class="button btn_blue">Read More</a>
             </div>
           </div>
         </div>
@@ -156,8 +166,12 @@
     <footer class="tending_team section_padding">
       <div class="container">
         <div class="tending_content">
-          <img src="./images/footerlogo.png" alt="logo" />
-          <p>© 2025 Everetts Lending. All Rights Reserve | Privacy policy</p>
+          <figure>
+            <img src="./images/footerlogo.png" alt="logo" />
+          </figure>
+          <p>
+            <a>© 2025 Everetts Lending. All Rights Reserve | Privacy policy</a>
+          </p>
         </div>
       </div>
     </footer>
